@@ -4,7 +4,9 @@ import { init, tx, id } from '@instantdb/react'
 import Button from '@mui/material/Button';
 
 // ID for app: Instant Tutorial Todo App
-const APP_ID = ''
+const APP_ID = process.env.NEXT_PUBLIC_INSTANT_DB_APP_ID
+
+console.log(APP_ID);
 
 // Optional: Declare your schema for intellisense!
 type Schema = {
